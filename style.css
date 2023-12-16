@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.quize {
+    background-color: #eee;
+    padding: 20px;
+    height: 100vh;
+}
+.quize .category-and-questions-count {
+    background-color: white;
+    padding: 25px;
+    margin: 0 0 25px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quize .the-test {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+.quize .the-test .question {
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+    background-color: wheat;
+    border-radius: 0 15px;
+}
+.quize .the-test .answer-erea {
+    background-color: #eee;
+    margin-top: 25px;
+    padding: 25px;
+}
+.quize .the-test .answer-erea .answer{ 
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #777; 
+}
+.quize .the-test .answer-erea .answer:not(:last-child){
+    border-bottom: 1px solid #4433;
+}
+.quize .the-test .answer-erea .answer label {
+    margin-left: 12px;
+    cursor: pointer;
+}
+.quize .the-test .answer-erea .answer input[type = "radio"]:checked + label {
+    color: #0075ff;
+}
+.quize .the-test .answer-erea .answer input[type = "radio"] {
+    cursor: pointer;
+}
+.quize .button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 25px;
+    background-color: #0075ff;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.quize .span-bullits-and-time {
+    display: flex;
+    align-items: center;
+    padding: 55px 50px 0;
+}
+.quize .span-bullits-and-time .span {
+    display: flex;
+    flex: 1;
+}
+.quize .span-bullits-and-time .span span {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.quize .span-bullits-and-time .span span.on{
+    background-color: #0075ff;
+}
+.quize .span-bullits-and-time .time-down{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 0 5px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.quize .result {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+.quize .result span {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    margin-right: 5px;
+}
